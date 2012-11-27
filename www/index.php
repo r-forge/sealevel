@@ -43,7 +43,13 @@ echo $contents; } ?>
 
 <!-- end of project description -->
 
-<p> No content added. </p>
+
+<p>
+  This package provides functions that can be used to reprocude the analysis in <a href="http://www.jcronline.org/doi/pdf/10.2112/JCOASTRES-D-11-00169.1">The Effect of the 18.6-Year Lunar Nodal Cycle on Regional Sea-Level Rise Estimates</a> by Fedor Baart, Pieter H.A.J.M. van Gelder, John de Ronde, Mark van Koningsveld and Bert Wouters.
+</p>
+<p>
+  A discussion of <a href="http://www.jcronline.org/doi/pdf/10.2112/JCOASTRES-11A-00024.1">Trends in Sea-Level Trend Analysis</a> discusses the current topics.
+</p>
 
 <p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
 
