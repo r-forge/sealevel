@@ -1,6 +1,6 @@
 require("ncdf4")
 require("sp")
-read.pelter2004 <- function(filename) {
+read.peltier2004 <- function(filename) {
   con <- nc_open(filename)
 
   lat <- ncvar_get(con, "Lat")

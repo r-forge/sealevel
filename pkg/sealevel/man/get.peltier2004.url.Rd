@@ -1,13 +1,13 @@
-\name{get.pelter2004.url}
-\alias{get.pelter2004.url}
+\name{get.peltier2004.url}
+\alias{get.peltier2004.url}
 \title{
-Get the url where the pelter2004 database is located.
+Get the url where the peltier2004 database is located.
 }
 \description{
-This file looks up the url of the PELTER2004 dataset.
+This file looks up the url of the PELTIER2004 dataset.
 }
 \usage{
-get.pelter2004.url(type="sea")
+get.peltier2004.url(type="sea")
 
 }
 \arguments{
@@ -15,7 +15,7 @@ get.pelter2004.url(type="sea")
 }
 %- maybe also 'usage' for other objects documented here.
 \details{
-The Pelter2004 dataset provides the estimates from the glacial isostatic adjustment model, denoted ICE-5G (VM2).
+The Peltier2004 dataset provides the estimates from the glacial isostatic adjustment model, denoted ICE-5G (VM2).
 }
 \references{
 %% ~put references to the literature/web site here ~
@@ -26,9 +26,9 @@ Fedor Baart
 }
 
 \seealso{
-\code{\link{read.pelter2004}}
+\code{\link{read.peltier2004}}
 }
 \examples{
-url <- get.pelter2004.url('sea')
+url <- get.peltier2004.url('sea')
 }
 \keyword{ ~datasets }
