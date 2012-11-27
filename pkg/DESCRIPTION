@@ -1,0 +1,12 @@
+Package: sealevel
+Type: Package
+Title: Utility functions for reading and analyzing trends in common used sealevel archives.
+Version: 0.1
+Date: 2011-06-23
+Author: Fedor Baart
+Maintainer: Fedor Baart <f.baart@tudelft.nl>
+Description: This package provides utility functions to read data from sea level data archives such as PSMSL, CSIRO, Colorado.edu and Soest. 
+Imports: zoo, plyr, stringr, ncdf4, sp
+License: GPL-3
+LazyLoad: yes
+LazyData: yes

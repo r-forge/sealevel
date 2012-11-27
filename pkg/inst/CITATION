@@ -1,0 +1,15 @@
+citHeader("To cite package the sea level datasets in publications use:")
+
+citEntry(entry="Article",
+  author="Allan, R. and Ansell, T.",
+  title="A new globally complete monthly historical gridded mean sea level pressure dataset (HadSLP2): 1850-2004",
+  journal="Journal of Climate",
+  volume=19,
+  number=22,
+  pages="5816--5842",
+  year="2006",
+  url="http://www.metoffice.gov.uk/hadobs",
+  textVersion = paste("Allan, R., and T. Ansell, 2006: A New Globally Complete Monthly Historical Gridded Mean Sea Level Pressure Dataset (HadSLP2): 1850-2004. J. Climate, 19, 5816-5842.",
+"http://www.metoffice.gov.uk/hadobs")
+)
+
