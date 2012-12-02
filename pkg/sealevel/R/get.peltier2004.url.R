@@ -14,5 +14,11 @@ get.peltier2004.url <- function(type="sea") {
   else if (type=="hor") {
     url <- "http://www.atmosp.physics.utoronto.ca/~peltier/datasets/GRID/hor_vel250.1grid.ICE5Gv1.3_VM2_L90_2012.nc"
   }
+  else if (type=="psmslsea") {
+    url <- "http://www.atmosp.physics.utoronto.ca/~peltier/datasets/psmsl/drsl250.PSMSL.ICE5Gv1.3_VM2_L90_2012b.txt"
+  }
+  else if (type=="psmslrad") {
+    url <- "http://www.atmosp.physics.utoronto.ca/~peltier/datasets/psmsl/drad250.PSMSL.ICE5Gv1.3_VM2_L90_2012b.txt"
+  }
   return(url)
 }
