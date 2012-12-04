@@ -19,7 +19,7 @@ Fedor Baart
 
 \seealso{
 \code{\link{read.hadslp2}}
-\code{\link{ncdf4}}
+\code{\link{ncdf}}
 }
 \examples{
  url <- get.hadslp2.url()

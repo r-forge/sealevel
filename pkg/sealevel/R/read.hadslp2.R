@@ -1,12 +1,12 @@
-require("ncdf4")
+require("ncdf")
 read.hadslp2 <- function(filename) {
-  con <- nc_open(filename)
-  print(con)
-  slp <- ncvar_get(con, "slp")
-  lat <- ncvar_get(con, "lat")
-  lon <- ncvar_get(con, "lon")
-  time <- ncvar_get(con, "time")
-  nc_close(con)
+  con <- open.ncdf(filename)
+  slp <- get.var.ncdf(con, "slp")
+  lat <- get.var.ncdf(con, "lat")
+  lon <- get.var.ncdf(con, "lon")
+  time <- get.var.ncdf(con, "time")
+  close.ncdf(con)
   dimnames(slp) <- list(lon, lat, time)
+  return(slp)
 }
 

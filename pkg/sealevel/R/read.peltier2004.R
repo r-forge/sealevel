@@ -1,23 +1,23 @@
-require("ncdf4")
+require("ncdf")
 require("sp")
 read.peltier2004 <- function(filename) {
   ext <- tail(unlist(strsplit(filename, ".", fixed = TRUE)),n=1)
   if (ext =="nc") {
-      con <- nc_open(filename)
+      con <- open.ncdf(filename)
 
-      lat <- ncvar_get(con, "Lat")
-      lon <- ncvar_get(con, "Lon")
+      lat <- get.var.ncdf(con, "Lat")
+      lon <- get.var.ncdf(con, "Lon")
       # combine lon and lat into a gridded dataframe
       df <- data.frame(lon=rep(lon,times=length(lat)), lat=rep(lat,each=length(lon)))
       # add all the variables
       for (name in names(con$var)) {
-        df[,name] <- c(ncvar_get(con, name))
+        df[,name] <- c(get.var.ncdf(con, name))
       }
       # convert to a spatial object
       coordinates(df) <- ~lon+lat
       # and a gridded object (so you can use image)
       gridded(df) <- TRUE
-      nc_close(con)
+      close.ncdf(con)
     }
   else if (ext=="txt") {
     # one of those obscure text formats....
