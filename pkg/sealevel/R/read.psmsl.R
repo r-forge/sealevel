@@ -51,11 +51,11 @@ stations <- llply(stations,as.list)
 
 # This could be done more elegantly without a loop, but for now let's do it like this.
 n <- nrow(stations.df)
-print(n)
 for(i in 1:n){
   # get the next station
   station <- stations[[i]]
 
+  # We need to speed this up in order for cran testing...
   # this part could go into a separate function ....
   # more pasting...
   filename <- paste(as.character(station$ID), paste(code,"data",sep=""), sep=".")

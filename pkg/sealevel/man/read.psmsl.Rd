@@ -35,13 +35,18 @@ The station data is return as a list of lists. This will change in the future.
 }
 \examples{
 # look up the url
-psmslurl <- get.psmsl.url(type="monthly")
+psmslurl <- get.psmsl.url(type="annual")
 # store it localy (can't read zip files from the web)
 path <- basename(psmslurl)
 # download it
 download.file(psmslurl, path)
-# read it
+
+\dontrun{
+# this takes a while on slow machines
+
+# read it 
 stations <- read.psmsl(path)
+}
 # and clean up
 unlink(path)
 }

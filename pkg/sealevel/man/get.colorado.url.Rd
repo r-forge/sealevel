@@ -30,6 +30,7 @@ Fedor Baart
 \code{\link{get.psmsl.url}}
 }
 \examples{
-url <- get.colorado.url() # defaults to Global dataset
+# defaults to Global dataset
+url <- get.colorado.url() 
 }
 \keyword{ ~datasets }

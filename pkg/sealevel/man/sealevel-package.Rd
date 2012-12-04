@@ -30,13 +30,15 @@ Maintainer: Fedor Baart <f.baart@tudelft.nl>
 }
 \examples{
 # look up the url
-psmslurl <- get.psmsl.url(type="monthly")
+psmslurl <- get.psmsl.url(type="annual")
 # store it localy (can't read zip files from the web)
 path <- basename(psmslurl)
 # download it
 download.file(psmslurl, path)
-# read it
+\dontrun{
+# read it, takes a while
 stations <- read.psmsl(description=path)
+}
 # and clean up
 unlink(path)
 }

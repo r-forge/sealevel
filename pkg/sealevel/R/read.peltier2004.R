@@ -22,7 +22,7 @@ read.peltier2004 <- function(filename) {
   else if (ext=="txt") {
     # one of those obscure text formats....
     # skip 7 lines
-    df <- read.fwf(path, widths=c(8,8, 5,7, 24,9, 9, 9), header=F, skip=7, comment.char = "!", strip.white = TRUE, as.is=c("V5"))
+    df <- read.fwf(filename, widths=c(8,8, 5,7, 24,9, 9, 9), header=F, skip=7, comment.char = "!", strip.white = TRUE, as.is=c("V5"))
     names(df) <- c("lat", "lon", "ID", "location", "name", "250yrsBP-now", "now-250yrsAP", "now")
   }
     
