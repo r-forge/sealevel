@@ -19,6 +19,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title><?php echo $group_name; ?></title>
 	<link href="http://<?php echo $themeroot; ?>styles/estilo1.css" rel="stylesheet" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript" />
   </head>
 
 <body>
@@ -69,6 +70,8 @@ echo $contents; } ?>
 </p>
 
 <p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
+
+
 
 </body>
 </html>
