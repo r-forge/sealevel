@@ -1,7 +1,7 @@
 \name{read.hadslp2}
 \alias{read.hadslp2}
 \title{
-Strip whitespace from a string.
+Read surface level pressures.
 }
 \description{
 Read the surface level pressure dataset from the metoffice. This is used for the inverse barometer correction.
